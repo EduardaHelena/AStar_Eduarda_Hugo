@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 1c479a75c57508248ae2af0c6ba38187
+timeCreated: 1493984683
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - playerPrefab: {fileID: 114915724429587224, guid: 71efe649aef22b241800705d04dc40fc,
+      type: 2}
+  - blackTilePrefab: {fileID: 114367202979085306, guid: e6aada013a5f7ad4e94d3395cfe6f54f,
+      type: 2}
+  - whiteTilePrefab: {fileID: 114075218964862872, guid: 44b93161d77fade41b484a726e4a930c,
+      type: 2}
+  - wallTilePrefab: {fileID: 114367202979085306, guid: e5e825366e4ecf84cbaf4bd49019f452,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,27 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+public static class PathFinder
+{
+
+	public static List<Grid.Position> FindPath (Tile[,] tiles, Grid.Position fromPosition, Grid.Position toPosition)
+	{
+		var path = new List<Grid.Position>();
+		path.Add( fromPosition );
+		path.Add( toPosition );
+
+		while (fromPosition.x != toPosition.x) {
+			fromPosition.x++;
+			path.Add (fromPosition);
+
+
+
+		}
+
+
+			
+	
+
+		return path;
+	}
+}
