@@ -27,7 +27,13 @@ public class Tile : MonoBehaviour
 		tileRenderer.SetPropertyBlock( propertyBlock );
 	}
 
-	private void Awake()
+
+    public static bool InsideGrid(Grid.Position pos, Tile[,] tiles)
+    {
+        return !(pos.x < 0 || pos.x >= tiles.GetLength(0) || pos.y < 0 || pos.y >= tiles.GetLength(1) || tiles[pos.x, pos.y].isWall);
+    }
+
+    private void Awake()
 	{
 		tileRenderer = GetComponent<Renderer>();
 		propertyBlock = new MaterialPropertyBlock();
@@ -35,6 +41,9 @@ public class Tile : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		grid.MoveTo( position );
+        if (!isWall)
+        {
+            grid.MoveTo(position);
+        }
 	}
 }

@@ -1,9 +1,18 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
+﻿<Properties StartupItem="AStar_Eduarda_Hugo.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PathFinder.cs">
     <Files>
-      <File FileName="Assets\Scripts\PathFinder.cs" Line="19" Column="11" />
+      <File FileName="Assets\Scripts\PathFinder.cs" Line="95" Column="4" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AStar_Eduarda_Hugo" expanded="True">
+            <Node name="AStar_Eduarda_Hugo" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

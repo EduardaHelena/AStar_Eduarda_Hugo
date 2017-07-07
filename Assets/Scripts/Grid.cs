@@ -3,19 +3,33 @@ using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
-	[System.Serializable]
-	public struct Position
-	{
-		public int x;
-		public int y;
+    [System.Serializable]
+    public struct Position
+    {
+        public int x;
+        public int y;
+        public Position(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+        public override bool Equals(object pos)
+        {
+            if (!(pos is Grid.Position))
+            {
+                return false;
+            }
+            Grid.Position position = (Grid.Position)pos;
+            return (position.x == this.x && position.y == this.y);
+        }
+        public Vector3 ToWorldPosition(Vector2 spacing, float height)
+        {
+            return new Vector3(x * spacing.x, height, y * spacing.y);
+        }
+    }
 
-		public Vector3 ToWorldPosition( Vector2 spacing, float height )
-		{
-			return new Vector3( x * spacing.x, height, y * spacing.y );
-		}
-	}
 
-	public Player playerPrefab;
+    public Player playerPrefab;
 	public Tile blackTilePrefab;
 	public Tile whiteTilePrefab;
 	public Tile wallTilePrefab;
